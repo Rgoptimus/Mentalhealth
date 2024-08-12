@@ -10,6 +10,6 @@ st.markdown("This apps will be used for gathering data")
 conn = st.experimental_connection("gsheets", type = GSheetsConnection)
 
 # Fetch existing vendors data
-existing_data = conn.read(worksheet="Sheet1", usecols=list(range(3)), ttl=1)
+existing_data = conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1z7UPC-LoZDsNvsVbGv4cYsAM8D65wdIKci3xBXGMTqw/edit?usp=sharing", usecols=list(range(3)), ttl=1)
 
 st.dataframe(existing_data)
