@@ -1,15 +1,11 @@
-# Import the Streamlit library
+# example/st_app_gsheets_using_service_account.py
+
 import streamlit as st
+from streamlit_gsheets import GSheetsConnection
 
-# Set the title of the app
-st.title('Simple Streamlit App')
+st.title("Read Google Sheet as DataFrame")
 
-# Create a text input box
-user_input = st.text_input("Enter your name:")
+conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+df = conn.read(worksheet="Example 1")
 
-# Create a button that updates the app when clicked
-if st.button('Submit'):
-    if user_input:
-        st.write(f"Hello, {user_input}!")
-    else:
-        st.write("Please enter your name.")
+st.dataframe(df)
