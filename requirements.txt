@@ -1,18 +1,11 @@
-streamlit
-scikit-learn
-category_encoders
-numpy
-scipy
-statsmodels
-pandas
-patsy
+pip==24.2
+streamlit==1.22.0
+git+https://github.com/streamlit/gsheets-connection
+numpy==1.26.4
+scipy>=1.0.0
+pandas==1.5.3
+patsy>=0.5.1
 unittest2
 importlib_resources ; python_version<"3.9"
-tensorflow
-transformers
-matplotlib
-seaborn
-xgboost
-tf_keras
-git+https://github.com/streamlit/gsheets-connection
-st-gsheets-connection
+matplotlib==3.7.1
+st-gsheets-connection==0.0.4
