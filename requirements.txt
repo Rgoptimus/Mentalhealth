@@ -1,5 +1,6 @@
 pip==24.2
 streamlit==1.22.0
+scikit-learn==1.2.2
 git+https://github.com/streamlit/gsheets-connection
 numpy==1.26.4
 scipy>=1.0.0
@@ -9,7 +10,6 @@ unittest2
 importlib_resources ; python_version<"3.9"
 matplotlib==3.7.1
 st-gsheets-connection==0.0.4
-scikit-learn==1.2.2
 category_encoders==2.6.3
 statsmodels>=0.9.0
 patsy>=0.5.1
